@@ -1,0 +1,452 @@
+// Fonts
+$default-font-family:         'Lato', sans-serif
+$default-font-size:           unquote("18px/28px")
+$larger-font-size:            unquote("22px/27px")
+$smaller-font-size:           unquote("16px/19px")
+
+// Colors
+$default-text-color:          #74767f
+$dark-text-color:             #353535
+$light-text-color:            #9097A2
+$inverse-text-color:          #fff
+$accent-text-color:           #ffcd44
+$default-link-color:          #4a90e2
+$main-menu-link-color:        rgba(255, 255, 255, 0.65)
+$btn-contact-border-color:    rgba(74,167,235,0.7)
+$dark-title-color:            #131313
+$medium-title-color:          #1a1b1e
+$light-title-color:           #51575C
+$button-text-color:           #212121
+
+$bg-default:                  #fff
+$bg-light-gray:               #f3f5f6
+$bg-calm-blue:                #39454e
+
+// Dimensions
+$main-wrapper-width:          1200px
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html, body
+  height: 100%
+
+body
+  display: flex
+  flex-direction: column
+  min-width: $main-wrapper-width
+  font: $default-font-size $default-font-family
+  color: $default-text-color
+  background-color: $bg-default
+
+.main-container
+  flex: 1 0 auto
+
+.main-wrap
+  width: $main-wrapper-width
+  margin: 0 auto
+  padding: 40px 60px
+  position: relative
+  .header &
+    height: 760px
+  .header.header-minimal &
+    height: 148px
+  .footer &
+    height: 140px
+
+%middle-width
+  width: 700px
+
+%wide-width
+  margin-left: 30px
+  margin-right: 30px
+
+%centered
+  margin-left: auto
+  margin-right: auto
+
+.middle-width
+  @extend %middle-width
+  @at-root form#{&}
+    width: 720px
+
+.centered
+  @extend %centered
+
+.extra-margin-bottom
+  margin-bottom: 80px !important
+
+%default-color-transition
+  transition-property: color, border-top-color, border-right-color, border-bottom-color, border-left-color
+  transition-duration: 300ms
+  transition-timing-function: ease-out
+
+.header
+  flex-shrink: 0
+  background: $bg-calm-blue url("../../images/bg_original.png") center bottom no-repeat
+  background-size: cover
+  p
+    margin: 0
+  &.header-minimal
+    background-position: center center
+  > .main-wrap
+    padding-top: 34px
+    padding-bottom: 64px
+  .lang
+    display: block
+    position: absolute
+    right: 60px
+    top: 62px
+    width: 25px
+    height: 25px
+    background: 0 0 no-repeat
+    &.lang-nl
+      background-image: url("../../images/flag_nl.png")
+    &.lang-ru
+      background-image: url("../../images/flag_ru.png")
+    &.lang-en
+      background-image: url("../../images/flag_en.png")
+  .main-menu
+    position: absolute
+    top: 49px
+    right: 115px
+    display: flex
+    flex-flow: row nowrap
+    > a
+      color: $main-menu-link-color
+      text-decoration: none
+      font-size: 16px
+      line-height: 20px
+      padding: 15px 15px 13px
+      border-bottom: 2px solid transparent
+      &.active,
+      &:hover
+        color: #fff
+        border-bottom: 2px solid white
+        @extend %default-color-transition
+      &.contact
+        padding: 13px 18px
+        margin-left: 15px
+        border-radius: 25px
+        border: 2px solid $btn-contact-border-color
+        @extend %default-color-transition
+        &.active,
+        &:hover
+          border-color: white
+          color: #fff
+  .top-text
+    position: absolute
+    top: 148px
+    right: 60px
+  .middle-text
+    margin-top: 287px
+    > h1
+      letter-spacing: 0.25px
+  .bottom-text
+    position: absolute
+    top: 654px
+    left: 60px
+    p
+      font: 15px/18px $default-font-family
+      letter-spacing: 4px
+      color: $inverse-text-color
+      margin-bottom: 8px
+  .sub-menu
+    font: bold 13px/16px $default-font-family
+    display: flex
+    flex-flow: row nowrap
+    a
+      color: $accent-text-color
+      text-decoration: none
+      margin-right: 40px
+      letter-spacing: 2px
+      &:last-child
+        margin-right: 0
+
+.footer
+  flex-shrink: 0
+  background: $bg-calm-blue
+
+.bg-gray
+  background-color: $bg-light-gray
+
+.logo
+  display: block
+  width: 205px
+  height: 80px
+  background: transparent url("../../images/logo.png") no-repeat
+  .header &
+    position: absolute
+    top: 34px
+    left: 60px
+  .footer &
+    position: absolute
+    top: 30px
+    left: 60px
+
+h1
+  font: normal 60px/72px $default-font-family
+  color: $dark-title-color
+  text-align: center
+  margin: 80px 0 20px
+  .header &
+    font: bold 36px/54px $default-font-family
+    text-align: center
+    text-transform: uppercase
+    color: $inverse-text-color
+
+%heading-margins
+  margin: 20px 0
+
+h2
+  font: normal 44px/52px $default-font-family
+  color: $medium-title-color
+  text-align: left
+  @extend %heading-margins
+
+h3
+  font: normal 32px/39px $default-font-family
+  color: $medium-title-color
+  text-align: left
+  @extend %heading-margins
+
+h4
+  font: normal 22px/27px $default-font-family
+  color: $light-title-color
+  text-align: left
+  @extend %heading-margins
+
+a
+  color: $default-link-color
+  text-decoration: none
+
+%larger-font
+  font: $larger-font-size $default-font-family
+
+%smaller-font
+  font: $smaller-font-size $default-font-family
+
+%darker
+  color: $dark-text-color
+
+%lighter
+  color: $light-text-color
+
+p
+  margin: 20px 0
+  & + p
+    margin-top: 28px // = line-height
+  &.align-left
+    text-align: left
+  &.align-center
+    text-align: center
+  &.align-right
+    text-align: right
+
+.lighter
+  @extend %lighter
+  p
+    @extend %lighter
+
+.darker
+  @extend %darker
+  p
+    @extend %darker
+
+.larger
+  @extend %larger-font
+  p
+    @extend %larger-font
+
+.smaller
+  @extend %smaller-font
+  p
+    @extend %smaller-font
+
+ul, ol
+  list-style-position: inside
+  margin: 20px 0
+
+ul
+  list-style-type: none
+  > li:before
+    display: inline-block
+    content: "\2014\a0"
+    width: 1.4em
+
+%text-input
+  display: block
+  width: 100%
+  height: 60px
+  padding: 19px 20px
+  border-radius: 4px
+  font: $default-font-size $default-font-family
+  color: $light-title-color
+  border: none
+
+%button
+  display: block
+  height: 50px
+  min-width: 180px
+  border-radius: 25px
+  background-color: $accent-text-color
+  border: none
+  text-transform: uppercase
+  letter-spacing: 1px
+  color: $button-text-color
+  font: bold 13px/16px $default-font-family
+  cursor: pointer
+
+input[type="text"],
+input[type="password"],
+input[type="email"]
+  @extend %text-input
+
+button,
+input[type="submit"],
+input[type="reset"]
+  @extend %button
+
+.social-links
+  position: absolute
+  top: 50px
+  right: 60px
+  display: flex
+  flex-direction: row
+  > a
+    display: block
+    width: 40px
+    height: 40px
+    margin-left: 20px
+    background: 0 0 no-repeat
+    transition: opacity 200ms ease-out
+    &:hover
+      opacity: 0.7
+      //background-position: 0 -40px
+    &.twitter
+      background-image: url("../../images/ic_twitter.png")
+    &.facebook
+      background-image: url("../../images/ic_facebook.png")
+    &.linkedin
+      background-image: url("../../images/ic_linkedIn.png")
+
+.map-container
+  height: 300px
+  background: url("../../images/map.png") center center no-repeat
+  background-size: cover
+
+.form-row
+  margin: 20px -10px
+  display: flex
+  flex-flow: row nowrap
+  .form-field
+    padding: 0 10px
+    flex-grow: 1
+
+.contact-form
+  margin: 80px -10px 104px
+
+.multi-column
+  padding: 0 30px 20px
+  display: flex
+  flex-flow: row nowrap
+  > .column
+    flex-basis: 280px
+    margin-left: 30px
+    margin-right: 30px
+    h4
+      margin-top: 0
+      text-align: left
+    p
+      font: 16px/20px $default-font-family
+      letter-spacing: 0.5px
+      color: $light-text-color
+
+.gallery
+  @extend %wide-width
+  margin-top: 40px
+  margin-bottom: 40px
+  display: flex
+  flex-flow: row wrap
+  justify-content: stretch
+  border: 2px solid white
+  > .item
+    flex: 1 25%
+    height: 250px
+    padding: 10px
+    z-index: -1
+    border-right: 1px solid #d8d8d8
+    border-bottom: 1px solid #d8d8d8
+    margin-right: -1px
+    margin-bottom: -1px
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    img
+      max-width: 100%
+      max-height: 100%
+
+.two-cols
+  margin-bottom: 40px
+  display: flex
+  flex-flow: row nowrap
+  align-content: stretch
+  align-items: flex-start
+  @extend %wide-width
+  &:first-child
+    margin-top: 60px
+  &:last-child
+    margin-bottom: 60px
+  .two-cols
+    margin: 0
+    .left-col
+      margin-right: 60px
+  > .left-col
+    flex: 0 280px
+    margin-right: 90px
+  > .right-col
+    flex: 1
+  &.incut
+    > .left-col
+      flex-basis: 370px
+  h1
+    margin-top: 20px
+  h3 + h4
+    margin-top: -10px
+  .left-col
+    h1
+      text-align: left
+    img
+      margin: 20px 0
+    h4 + img
+      margin-top: 80px
+
+.incut
+  margin-top: 80px
+  margin-bottom: 80px
+  ul
+    list-style: none
+    margin-left: 10px
+    > li
+      border-left: 1px solid #dde1e5
+      line-height: 20px
+      padding-left: 50px
+      padding-bottom: 28px
+      position: relative
+      &:last-child
+        border-left: none
+      &:before
+        vertical-align: top
+        content: ''
+        position: absolute
+        top: 0
+        left: -10px
+        display: block
+        margin-right: 40px
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        background-color: #dde1e5
