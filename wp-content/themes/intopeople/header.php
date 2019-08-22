@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<?php get_template_part('head') ?>
+<html <?php language_attributes() ?>>
+<head>
+    <meta charset="UTF-8">
+    <title><?php the_title() ?></title>
+	<?php wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700&display=swap' ) ?>
+	<?php wp_enqueue_style('style', get_stylesheet_uri()) ?>
+	<?php wp_head() ?>
+</head>
 <body>
-    <div class="header<?= is_front_page() ? '' : ' header-minimal' ?>">
+    <div class="header<?php echo is_front_page() ? '' : ' header-minimal' ?>">
         <div class="main-wrap">
-            <a class="logo" href="<?= get_home_url() ?>"></a>
+            <a class="logo" href="<?php echo get_home_url() ?>"></a>
             <nav class="main-menu">
-                <a href="about.php"<?= $selected == 1 ? ' class="active"' : '' ?>>Over Ons</a>
-                <a href="development.php"<?= $selected == 2 ? ' class="active"' : '' ?>>Nearshore Development</a>
-                <a href="payrolling.php"<?= $selected == 3 ? ' class="active"' : '' ?>>Payrolling</a>
-                <a href="detachering.php"<?= $selected == 4 ? ' class="active"' : '' ?>>Detachering</a>
-                <a href="contact.php" class="contact<?= $selected == 5 ? ' active' : '' ?>">Contact</a>
+                <a href="about.php"<?php echo $selected == 1 ? ' class="active"' : '' ?>>Over Ons</a>
+                <a href="development.php"<?php echo $selected == 2 ? ' class="active"' : '' ?>>Nearshore Development</a>
+                <a href="payrolling.php"<?php echo $selected == 3 ? ' class="active"' : '' ?>>Payrolling</a>
+                <a href="detachering.php"<?php echo $selected == 4 ? ' class="active"' : '' ?>>Detachering</a>
+                <a href="contact.php" class="contact<?php echo $selected == 5 ? ' active' : '' ?>">Contact</a>
             </nav>
-            <a href="#" class="lang lang-<?= 'nl' ?>"></a>
+            <a href="#" class="lang lang-<?php echo 'nl' ?>"></a>
             <?php if (is_front_page()): ?>
                 <div class="top-text">
                     <div class="sub-menu">
