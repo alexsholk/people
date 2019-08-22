@@ -2,16 +2,9 @@
 <html lang="en">
 <?php get_template_part('head') ?>
 <body>
-    <?php
-
-    $selected = $selected ?? null;
-    $lang = $lang ?? 'nl';
-    $header_minimal = $header_minimal ?? false;
-
-    ?>
-    <div class="header<?= $header_minimal ? ' header-minimal' : '' ?>">
+    <div class="header<?= is_front_page() ? '' : ' header-minimal' ?>">
         <div class="main-wrap">
-            <a class="logo" href="index.php"></a>
+            <a class="logo" href="<?= get_home_url() ?>"></a>
             <nav class="main-menu">
                 <a href="about.php"<?= $selected == 1 ? ' class="active"' : '' ?>>Over Ons</a>
                 <a href="development.php"<?= $selected == 2 ? ' class="active"' : '' ?>>Nearshore Development</a>
@@ -19,8 +12,8 @@
                 <a href="detachering.php"<?= $selected == 4 ? ' class="active"' : '' ?>>Detachering</a>
                 <a href="contact.php" class="contact<?= $selected == 5 ? ' active' : '' ?>">Contact</a>
             </nav>
-            <a href="#" class="lang lang-<?= $lang ?>"></a>
-            <?php if (!$header_minimal): ?>
+            <a href="#" class="lang lang-<?= 'nl' ?>"></a>
+            <?php if (is_front_page()): ?>
                 <div class="top-text">
                     <div class="sub-menu">
                         <a href="#">Schrijf je in</a>
