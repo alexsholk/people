@@ -12,17 +12,6 @@
         <div class="main-wrap">
             <a class="logo" href="<?php echo get_home_url() ?>"></a>
 	        <?php wp_nav_menu( array( 'theme_location' => 'top', 'container' => false, 'menu_class' => 'main-menu' ) ) ?>
-
-            <?php /*
-            <nav class="main-menu">
-
-                <a href="about.php"<?php echo $selected == 1 ? ' class="active"' : '' ?>>Over Ons</a>
-                <a href="development.php"<?php echo $selected == 2 ? ' class="active"' : '' ?>>Nearshore Development</a>
-                <a href="payrolling.php"<?php echo $selected == 3 ? ' class="active"' : '' ?>>Payrolling</a>
-                <a href="detachering.php"<?php echo $selected == 4 ? ' class="active"' : '' ?>>Detachering</a>
-                <a href="contact.php" class="contact<?php echo $selected == 5 ? ' active' : '' ?>">Contact</a>
-            </nav>
- */ ?>
             <a href="#" class="lang lang-<?php echo 'nl' ?>"></a>
             <?php if (is_front_page()): ?>
                 <div class="top-text">
