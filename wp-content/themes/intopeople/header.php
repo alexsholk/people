@@ -11,11 +11,7 @@
     <div class="header<?php echo is_front_page() ? '' : ' header-minimal' ?>">
         <div class="main-wrap">
             <a class="logo" href="<?php echo get_home_url() ?>"></a>
-	        <?php wp_nav_menu( array(
-	                'theme_location' => 'top',
-                    'container' => false,
-	                'items_wrap'      => '<nav id="%1$s" class="%2$s">%3$s</nav>'
-            ) ) ?>
+	        <?php wp_nav_menu( array( 'theme_location' => 'top', 'container' => false, 'menu_class' => 'main-menu' ) ) ?>
 
             <?php /*
             <nav class="main-menu">

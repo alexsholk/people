@@ -70,12 +70,6 @@ form.middle-width {
     margin-bottom: 80px !important;
 }
 
-.header .main-menu > a.contact, .header .main-menu > a.active, .header .main-menu > a:hover {
-    transition-property: color, border-top-color, border-right-color, border-bottom-color, border-left-color;
-    transition-duration: 300ms;
-    transition-timing-function: ease-out;
-}
-
 .header {
     flex-shrink: 0;
     background: #39454e url("assets/images/bg_original.png") center bottom no-repeat;
@@ -113,28 +107,36 @@ form.middle-width {
     position: absolute;
     top: 49px;
     right: 115px;
+    margin: 0;
     display: flex;
     flex-flow: row nowrap;
 }
-.header .main-menu > a {
+.header .main-menu li:before, .header .main-menu li:after {
+    display: none;
+}
+.header .main-menu li a {
+    display: block;
     color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
     font-size: 16px;
     line-height: 20px;
     padding: 15px 15px 13px;
     border-bottom: 2px solid transparent;
+    transition-property: color, border-top-color, border-right-color, border-bottom-color, border-left-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
 }
-.header .main-menu > a.active, .header .main-menu > a:hover {
+.header .main-menu li.current-menu-item a, .header .main-menu li:hover a {
     color: #fff;
     border-bottom: 2px solid white;
 }
-.header .main-menu > a.contact {
+.header .main-menu li:last-child a {
     padding: 13px 18px;
     margin-left: 15px;
     border-radius: 25px;
     border: 2px solid rgba(74, 167, 235, 0.7);
 }
-.header .main-menu > a.contact.active, .header .main-menu > a.contact:hover {
+.header .main-menu li.current-menu-item:last-child a, .header .main-menu li:last-child:hover a {
     border-color: white;
     color: #fff;
 }
