@@ -22,6 +22,17 @@ if ( ! function_exists( 'intopeople_setup' ) ) :
 			'top'    => __( 'Top Menu', 'intopeople' ),
 			'social' => __( 'Social Links Menu', 'intopeople' ),
 		) );
+
+		/**
+		 * This theme styles the visual editor to resemble the theme style,
+		 * specifically font, colors, icons, and column width.
+		 */
+		add_editor_style( 'editor-style.css' );
+
+		/**
+		 * Load regular editor styles into the new block-based editor.
+		 */
+		add_theme_support( 'editor-styles' );
 	}
 endif; // intopeople_setup
 
