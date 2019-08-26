@@ -85,28 +85,10 @@ form.middle-width {
     padding-top: 34px;
     padding-bottom: 64px;
 }
-.header .lang {
-    display: block;
-    position: absolute;
-    right: 60px;
-    top: 62px;
-    width: 25px;
-    height: 25px;
-    background: 0 0 no-repeat;
-}
-.header .lang.lang-nl {
-    background-image: url("assets/images/flag_nl.png");
-}
-.header .lang.lang-ru {
-    background-image: url("assets/images/flag_ru.png");
-}
-.header .lang.lang-en {
-    background-image: url("assets/images/flag_en.png");
-}
 .header .main-menu {
     position: absolute;
     top: 49px;
-    right: 115px;
+    right: 60px;
     margin: 0;
     display: flex;
     flex-flow: row nowrap;
@@ -130,15 +112,33 @@ form.middle-width {
     color: #fff;
     border-bottom: 2px solid white;
 }
-.header .main-menu li:last-child a {
+.header .main-menu li.bordered a {
     padding: 13px 18px;
     margin-left: 15px;
     border-radius: 25px;
     border: 2px solid rgba(74, 167, 235, 0.7);
 }
-.header .main-menu li.current-menu-item:last-child a, .header .main-menu li:last-child:hover a {
+.header .main-menu li.bordered.current-menu-item a, .header .main-menu li.bordered:hover a {
     border-color: white;
     color: #fff;
+}
+.header .main-menu li.wpm-languages a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 13px 0 0 30px;
+    padding: 0;
+    background: 0 0 no-repeat;
+    border: 0;
+}
+.header .main-menu li.wpm-languages a > * {
+    display: none;
+}
+.header .main-menu li.wpm-languages.menu-item-language-nl a {
+    background-image: url("assets/images/flag_nl.png");
+}
+.header .main-menu li.wpm-languages.menu-item-language-en a {
+    background-image: url("assets/images/flag_en.png");
 }
 .header .top-text {
     position: absolute;

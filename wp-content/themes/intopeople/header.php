@@ -12,7 +12,6 @@
         <div class="main-wrap">
             <a class="logo" href="<?php echo get_home_url() ?>"></a>
 	        <?php wp_nav_menu( array( 'theme_location' => 'top', 'container' => false, 'menu_class' => 'main-menu' ) ) ?>
-            <a href="#" class="lang lang-<?php echo 'nl' ?>"></a>
             <?php if (is_front_page()): ?>
                 <div class="top-text">
                     <div class="sub-menu">
