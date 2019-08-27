@@ -1,2 +1,4 @@
 /.idea/
 /_dump/
+/wp-content/db.php
+/wp-content/debug.log
