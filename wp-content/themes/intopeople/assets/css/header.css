@@ -1,0 +1,121 @@
+.header {
+    flex-shrink: 0;
+    background: #39454e url("../images/bg_original.png") center bottom no-repeat;
+    background-size: cover;
+}
+.header .main-wrap {
+    height: 760px;
+    padding-top: 34px;
+    padding-bottom: 64px;
+}
+.header.header-minimal {
+    background-position: center center;
+}
+.header.header-minimal .main-wrap {
+    height: 148px;
+}
+.header .logo {
+    position: absolute;
+    top: 34px;
+    left: 60px;
+}
+.header h1 {
+    font: bold 36px/54px "Lato", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.header p {
+    margin: 0;
+}
+.header .main-menu {
+    position: absolute;
+    top: 49px;
+    right: 60px;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.header .main-menu li:before, .header .main-menu li:after {
+    display: none;
+}
+.header .main-menu li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 15px 13px;
+    border-bottom: 2px solid transparent;
+    transition-property: color, border-top-color, border-right-color, border-bottom-color, border-left-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+.header .main-menu li.current-menu-item a, .header .main-menu li:hover a {
+    color: #fff;
+    border-bottom: 2px solid white;
+}
+.header .main-menu li.bordered a {
+    padding: 13px 18px;
+    margin-left: 15px;
+    border-radius: 25px;
+    border: 2px solid rgba(74, 167, 235, 0.7);
+}
+.header .main-menu li.bordered.current-menu-item a, .header .main-menu li.bordered:hover a {
+    border-color: white;
+    color: #fff;
+}
+.header .main-menu li.wpm-languages a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 13px 0 0 30px;
+    padding: 0;
+    background: 0 0 no-repeat;
+    border: 0;
+}
+.header .main-menu li.wpm-languages a > * {
+    display: none;
+}
+.header .main-menu li.wpm-languages.menu-item-language-nl a {
+    background-image: url("../images/flag_nl.png");
+}
+.header .main-menu li.wpm-languages.menu-item-language-en a {
+    background-image: url("../images/flag_en.png");
+}
+.header .top-text {
+    position: absolute;
+    top: 148px;
+    right: 60px;
+}
+.header .middle-text {
+    margin-top: 287px;
+}
+.header .middle-text > h1 {
+    letter-spacing: 0.25px;
+}
+.header .bottom-text {
+    position: absolute;
+    top: 654px;
+    left: 60px;
+}
+.header .bottom-text p {
+    font: 15px/18px "Lato", sans-serif;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.header .sub-menu {
+    font: bold 13px/16px "Lato", sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.header .sub-menu a {
+    color: #ffcd44;
+    text-decoration: none;
+    margin-right: 40px;
+    letter-spacing: 2px;
+}
+.header .sub-menu a:last-child {
+    margin-right: 0;
+}

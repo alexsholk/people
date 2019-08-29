@@ -6,7 +6,7 @@
                 We are excited to work with services and complicated applications,<br>
                 so if your project one of those you will get a small discount
             </p>
-            <form class="contact-form" action="/" method="post">
+            <form class="default-form contact-form" action="/" method="post">
                 <div class="form-row">
                     <div class="form-field">
                         <input type="text" placeholder="Your name">
