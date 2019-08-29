@@ -8,6 +8,5 @@
             endwhile;
         endif;
 	?>
-    <?php get_template_part('contact-form') ?>
 </div>
 <?php get_footer();

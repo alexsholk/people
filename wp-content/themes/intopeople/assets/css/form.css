@@ -30,17 +30,58 @@
     font: bold 13px/16px "Lato", sans-serif;
     cursor: pointer;
 }
-
-.contact-form {
-    margin: 80px -10px 104px;
-}
-
-.form-row {
+.default-form .form-row {
     margin: 20px -10px;
     display: flex;
     flex-flow: row nowrap;
 }
-.form-row .form-field {
+.default-form .form-row .form-field {
+    padding: 0 10px;
+    flex-grow: 1;
+}
+.contact-form {
+    margin: 80px -10px 104px;
+}
+/* Everest Forms */
+.main-container .everest-form {
+    width: 720px;
+    margin: 80px -10px 104px;
+}
+.main-container .everest-form input[type=text],
+.main-container .everest-form input[type=password],
+.main-container .everest-form input[type=email] {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 19px 20px;
+    border-radius: 4px;
+    font: 18px/28px "Lato", sans-serif;
+    color: #51575C;
+    border: none;
+}
+.main-container .everest-form button,
+.main-container .everest-form button[type=submit],
+.main-container .everest-form button[type=submit]:hover,
+.main-container .everest-form input[type=submit],
+.main-container .everest-form input[type=reset] {
+    display: block;
+    height: 50px;
+    min-width: 180px;
+    margin: 60px auto 0;
+    border-radius: 25px;
+    background-color: #ffcd44;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #212121;
+    font: bold 13px/16px "Lato", sans-serif;
+    cursor: pointer;
+}
+.evf-frontend-row .evf-frontend-grid {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.evf-field {
     padding: 0 10px;
     flex-grow: 1;
 }

@@ -10,6 +10,7 @@ Text Domain: intopeople
 */
 @import "editor-style.css";
 @import "assets/css/header.css";
+@import "assets/css/footer.css";
 @import "assets/css/form.css";
 
 * {
@@ -27,6 +28,9 @@ body {
 }
 .main-container {
     flex: 1 0 auto;
+}
+.main-container > p {
+    margin: 0;
 }
 .logo {
     display: block;
