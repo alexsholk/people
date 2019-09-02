@@ -1,0 +1,448 @@
+# Translation of Plugins - WP Multilang - Development (trunk) in Dutch
+# This file is distributed under the same license as the Plugins - WP Multilang - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-12-02 14:42:30+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - WP Multilang - Development (trunk)\n"
+
+#: includes/admin/meta-boxes/class-wpm-meta-box-comment-languages.php:37
+msgid "Show comment only in:"
+msgstr "Commentaar alleen tonen in:"
+
+#: includes/widgets/class-wpm-widget-language-switcher.php:25
+msgid "Display language switcher."
+msgstr "Taalkiezer weergeven."
+
+#: includes/admin/class-wpm-admin.php:100
+msgid "Thank you for translating with WP Multilang."
+msgstr "Bedankt voor het vertalen met WP Multilang."
+
+#: includes/admin/class-wpm-admin.php:91
+msgid "Thanks :)"
+msgstr "Bedankt :)"
+
+#. translators: 1: WP Multilang 2:: five stars
+#: includes/admin/class-wpm-admin.php:89
+msgid "If you like %1$s please leave us a %2$s rating. A huge thanks in advance!"
+msgstr "Als je tevreden bent met %1$s geef ons dan een %2$s beoordeling. Alvast heel erg bedankt!"
+
+#: includes/class-wpm-taxonomies.php:161
+msgid "A term with the name provided already exists in this taxonomy."
+msgstr "Een term met de opgegeven naam voor %s bestaat reeds in deze taxonomie."
+
+#: includes/class-wpm-ajax.php:460
+msgid "Update finished"
+msgstr "Update gereed"
+
+#: includes/class-wpm-ajax.php:190
+msgid "Localization deleted"
+msgstr "Lokalisatie verwijderd"
+
+#: includes/class-wpm-ajax.php:146
+msgid "No locale sending"
+msgstr "Geen locale verzonden"
+
+#: includes/admin/settings/class-wpm-settings-languages.php:46
+msgid "Installed languages"
+msgstr "Geïnstalleerde talen"
+
+#: includes/admin/settings/class-wpm-settings-general.php:87
+msgid "Use prefix for language by default."
+msgstr "Gebruik standaard een prefix voor taal."
+
+#: includes/admin/settings/class-wpm-settings-general.php:71
+msgid "Show untranslated strings on language by default."
+msgstr "Toon onvertaalde teksten in standaardtaal."
+
+#: includes/admin/settings/class-wpm-settings-general.php:70
+msgid "Show untranslated"
+msgstr "Onvertaalde tonen"
+
+#: includes/admin/settings/class-wpm-settings-general.php:60
+msgid "Set default site language."
+msgstr "Standaard site-taal instellen."
+
+#: includes/admin/settings/class-wpm-settings-general.php:52
+msgid "General options"
+msgstr "Algemene opties"
+
+#: includes/admin/settings/class-wpm-settings-general.php:27
+msgid "General"
+msgstr "Algemeen"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:181
+msgid "Import names for terms from qTranslate."
+msgstr "Term-vertalingen importeren vanuit qTranslate."
+
+#: includes/admin/settings/class-wpm-settings-additional.php:179
+msgid "Import"
+msgstr "Importeer"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:151
+msgid "Delete localization"
+msgstr "Lokalisatie verwijderen"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:109
+msgid "Set default translation for all posts, taxonomies, fields and options that available in config and not be translated before.<br><strong>WARNING:</strong> Changes are not reversible. Make a backup of the site database before starting."
+msgstr "Een default vertaling instellen voor alle nog onvertaalde berichten, taxonomies, velden en opties die beschikbaar zijn in config.<br><strong>WAARSCHUWING:</strong> Wijzigingen kunnen niet ongedaan worden gemaakt. Maak eerst een backup van de database."
+
+#: includes/admin/settings/class-wpm-settings-additional.php:108
+msgid "Set <strong>%s</strong> by default"
+msgstr "<strong>%s</strong> als standaard instellen"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:85
+msgid "Are you sure you want to delete this localization?"
+msgstr "Weet je zeker dat je deze lokalisatie wilt verwijderen?"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:62
+msgid "qTranslate import"
+msgstr "qTranslate import"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:56
+#: includes/admin/settings/class-wpm-settings-additional.php:133
+msgid "Installed localizations"
+msgstr "Geïnstalleerde lokalisaties"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:50
+msgid "Set default translation"
+msgstr "Standaardvertaling instellen"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:47
+msgid "Actions"
+msgstr "Acties"
+
+#: includes/admin/settings/class-wpm-settings-additional.php:26
+msgid "Additional"
+msgstr "Additioneel"
+
+#: includes/admin/class-wpm-admin-settings.php:126
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "De gemaakte wijzigingen zullen verloren gaan als je deze pagina sluit."
+
+#: includes/admin/class-wpm-admin-settings.php:74
+msgid "Your settings have been saved."
+msgstr "De instellingen zijn opgeslagen."
+
+#: includes/integrations/class-wpm-yoast-seo.php:226
+msgid "Locale must be with country domain. Like en_US"
+msgstr "Locale moet combinatie taal/regio zijn. Bijv.: nl_NL"
+
+#: includes/integrations/class-wpm-yoast-seo.php:225
+msgid "Opengraph Locale"
+msgstr "Opengraph Locale"
+
+#: includes/integrations/class-wpm-yoast-seo.php:223
+#: includes/integrations/class-wpm-yoast-seo.php:225
+msgid "Yoast SEO Opengraph Locale"
+msgstr "Yoast SEO Opengraph Locale"
+
+#: includes/class-wpm-ajax.php:555
+msgid "%d terms were imported successfully."
+msgstr "%d termen succesvol geïmporteerd."
+
+#: includes/admin/class-wpm-admin-qtranslate.php:31
+msgid "%s is active. Please deactivate it."
+msgstr "%s is actief. Deactiveer deze alstublieft."
+
+#: includes/libraries/abstract-wp-background-process.php:422
+msgid "Every %d minutes"
+msgstr "Iedere %d minuten"
+
+#: includes/class-wpm-install.php:420
+msgid "Settings"
+msgstr "Instellingen"
+
+#: includes/class-wpm-install.php:420
+msgid "View WP Multilang settings"
+msgstr "Bekijk WP Multilang instellingen"
+
+#: includes/class-wpm-install.php:327
+msgid "Translator"
+msgstr "Vertaler"
+
+#: includes/admin/views/html-notice-updating.php:12
+msgid "Taking a while? Click here to run it now."
+msgstr "Duurt lang? Klik hier om direct uit te voeren."
+
+#: includes/admin/views/html-notice-updating.php:12
+msgid "Your database is being updated in the background."
+msgstr "De database wordt op de achtergrond geüpdate."
+
+#: includes/admin/views/html-notice-updated.php:14
+msgid "WP Multilang data update complete. Thank you for updating to the latest version!"
+msgstr "WP Multilang data update gereed. Bedankt voor het updaten naar de laatste versie!"
+
+#: includes/admin/views/html-notice-update.php:17
+msgid "It is strongly recommended that you backup your database before proceeding. Are you sure you wish to run the updater now?"
+msgstr "Het wordt ten zeerste aangeraden een backup van de database te maken alvorens verder te gaan. Weet je zeker dat je nu de updater wilt uitvoeren?"
+
+#: includes/admin/views/html-notice-update.php:13
+msgid "Run the updater"
+msgstr "Updater uitvoeren"
+
+#: includes/admin/views/html-notice-update.php:12
+msgid "We need to update your site database to the latest version."
+msgstr "De site-database moet worden geüpdate naar de laatste versie."
+
+#: includes/admin/views/html-notice-update.php:12
+#: includes/admin/views/html-notice-updating.php:12
+msgid "WP Multilang data update"
+msgstr "WP Multilang data update"
+
+#: includes/admin/views/html-notice-custom.php:12
+#: includes/admin/views/html-notice-updated.php:12
+msgid "Dismiss"
+msgstr "Verbergen"
+
+#: includes/admin/settings/class-wpm-settings-languages.php:130
+msgid "New language pack successfully installed"
+msgstr "Nieuw taalpakket succesvol geïnstalleerd"
+
+#: includes/admin/settings/class-wpm-settings-general.php:79
+msgid "Use redirect to user browser language in first time."
+msgstr "Gebruik redirect naar browsertaal bij eerste bezoek."
+
+#: includes/admin/settings/class-wpm-settings-additional.php:153
+msgid "Delete unused not built-in language pack"
+msgstr "Verwijder ongebruikt niet-ingebouwd taalpakket"
+
+#: includes/admin/settings/class-wpm-settings-general.php:118
+msgid "Delete translations"
+msgstr "Vertalingen verwijderen"
+
+#: includes/admin/settings/views/html-languages.php:66
+#: includes/admin/settings/views/html-languages.php:157
+msgid "Translation"
+msgstr "Vertaling"
+
+#: includes/admin/settings/class-wpm-settings-general.php:54
+msgid "Read <a href=\"%s\" target=\"_blank\">Google guidelines</a> before."
+msgstr "Lees eerst de <a href=\"%s\" target=\"_blank\">Google richtlijnen</a>."
+
+#: includes/admin/settings/class-wpm-settings-general.php:86
+msgid "Use prefix"
+msgstr "Gebruik prefix"
+
+#: includes/admin/settings/class-wpm-settings-general.php:78
+msgid "Browser redirect"
+msgstr "Browser redirect"
+
+#: includes/admin/class-wpm-admin-notices.php:104
+#: includes/admin/class-wpm-admin-settings.php:66
+msgid "Action failed. Please refresh the page and retry."
+msgstr "Actie mislukt. Ververs de pagina en probeer nogmaals."
+
+#: includes/admin/class-wpm-admin-menus.php:113
+msgid "WP Multilang Settings"
+msgstr "WP Multilang Instellingen"
+
+#: includes/admin/settings/views/html-languages.php:60
+#: includes/admin/settings/views/html-languages.php:62
+#: includes/admin/settings/views/html-languages.php:151
+#: includes/admin/settings/views/html-languages.php:153
+msgid "Locale *"
+msgstr "Locale *"
+
+#: includes/admin/settings/views/html-languages.php:86
+#: includes/admin/settings/views/html-languages.php:88
+#: includes/admin/settings/views/html-languages.php:176
+#: includes/admin/settings/views/html-languages.php:178
+msgid "Time Format"
+msgstr "Tijdnotatie"
+
+#: includes/admin/settings/views/html-languages.php:80
+#: includes/admin/settings/views/html-languages.php:82
+#: includes/admin/settings/views/html-languages.php:170
+#: includes/admin/settings/views/html-languages.php:172
+msgid "Date Format"
+msgstr "Datumnotatie"
+
+#: includes/widgets/class-wpm-widget-language-switcher.php:50
+msgid "Select"
+msgstr "Selecteer"
+
+#: includes/admin/settings/views/html-languages.php:204
+msgid "Add language"
+msgstr "Taal toevoegen"
+
+#: includes/admin/settings/class-wpm-settings-general.php:119
+msgid "Delete translations when uninstalling plugin (some translations may not be deleted and you must delete them manually)."
+msgstr "Vertalingen verwijderen bij deïnstalleren van de plugin (mogelijk worden niet alle vertalingen automatisch verwijderd)."
+
+#: includes/wpm-template-functions.php:457
+msgid "For multilingual string, use syntax like %s."
+msgstr "Voor meertalige tekst, gebruik deze syntax: %s."
+
+#: includes/admin/class-wpm-admin-posts.php:138
+msgid "Current edit language:"
+msgstr "Huidge bewerkingstaal:"
+
+#: includes/admin/class-wpm-admin-menus.php:186
+msgid "Add to menu"
+msgstr "Toevoegen aan menu"
+
+#: includes/admin/settings/class-wpm-settings-general.php:59
+#: includes/class-wpm-rest-settings.php:34
+msgid "Site Language"
+msgstr "Sitetaal"
+
+#: includes/admin/class-wpm-admin-taxonomies.php:114
+#: includes/admin/class-wpm-admin-taxonomies.php:140
+msgid "Show term only in:"
+msgstr "Term alleen weegeven in:"
+
+#: includes/admin/meta-boxes/class-wpm-meta-box-post-languages.php:36
+msgid "Show post only in:"
+msgstr "Post alleen weergeven in:"
+
+#: includes/admin/class-wpm-admin-widgets.php:74
+msgid "Show widget only in:"
+msgstr "Widget alleen weergeven in:"
+
+#: includes/admin/class-wpm-admin-edit-menus.php:116
+msgid "Show item only in:"
+msgstr "Item alleen weergeven in:"
+
+#. Author of the plugin/theme
+msgid "Valentyn Riaboshtan"
+msgstr "Valentyn Riaboshtan"
+
+#. Description of the plugin/theme
+msgid "Multilingual plugin for WordPress"
+msgstr "Plugin for meertalige WordPress"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/VaLeXaR/wp-multilang"
+msgstr "https://github.com/VaLeXaR/wp-multilang"
+
+#. #-#-#-#-#  wp-multilang-code.pot (WP Multilang 2.1.12)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/admin/class-wpm-admin-menus.php:113
+#: includes/admin/class-wpm-admin.php:90
+msgid "WP Multilang"
+msgstr "WP Multilang"
+
+#: includes/admin/class-wpm-admin-notices.php:108
+#: includes/class-wp-multilang.php:61 includes/class-wp-multilang.php:68
+msgid "Cheatin&#8217; huh?"
+msgstr "Vals spelen?"
+
+#: includes/widgets/class-wpm-widget-language-switcher.php:52
+msgid "Switcher Type"
+msgstr "Taalkeuze type"
+
+#: includes/admin/class-wpm-admin-menus.php:216
+#: includes/widgets/class-wpm-widget-language-switcher.php:49
+msgid "Dropdown"
+msgstr "Dropdown"
+
+#: includes/widgets/class-wpm-widget-language-switcher.php:48
+msgid "List"
+msgstr "Lijst"
+
+#: includes/admin/class-wpm-admin-menus.php:242
+#: includes/widgets/class-wpm-widget-language-switcher.php:42
+msgid "Show"
+msgstr "Toon"
+
+#: includes/admin/class-wpm-admin-menus.php:236
+#: includes/widgets/class-wpm-widget-language-switcher.php:38
+msgid "Both"
+msgstr "Beide"
+
+#: includes/widgets/class-wpm-widget-language-switcher.php:32
+msgid "Title"
+msgstr "Titel"
+
+#: includes/widgets/class-wpm-widget-language-switcher.php:27
+msgid "Language Switcher"
+msgstr "Taalkiezer"
+
+#: includes/admin/settings/class-wpm-settings-general.php:111
+msgid "Uninstalling"
+msgstr "Deïnstalleren"
+
+#: includes/admin/settings/views/html-languages.php:27
+msgid "Default"
+msgstr "Standaard"
+
+#: includes/admin/settings/views/html-languages.php:25
+msgid "Current"
+msgstr "Huidige"
+
+#: includes/admin/settings/views/html-languages.php:95
+#: includes/admin/settings/views/html-languages.php:185
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Selecteer &mdash;"
+
+#: includes/admin/settings/views/html-languages.php:107
+#: includes/admin/settings/views/html-languages.php:196
+msgid "Delete"
+msgstr "Verwijder"
+
+#: includes/admin/class-wpm-admin-menus.php:237
+#: includes/admin/settings/views/html-languages.php:92
+#: includes/admin/settings/views/html-languages.php:94
+#: includes/admin/settings/views/html-languages.php:182
+#: includes/admin/settings/views/html-languages.php:184
+#: includes/widgets/class-wpm-widget-language-switcher.php:39
+msgid "Flag"
+msgstr "Vlag"
+
+#: includes/admin/class-wpm-admin-menus.php:238
+#: includes/admin/settings/views/html-languages.php:38
+#: includes/admin/settings/views/html-languages.php:40
+#: includes/admin/settings/views/html-languages.php:132
+#: includes/admin/settings/views/html-languages.php:134
+#: includes/widgets/class-wpm-widget-language-switcher.php:40
+msgid "Name"
+msgstr "Naam"
+
+#: includes/admin/settings/views/html-languages.php:44
+#: includes/admin/settings/views/html-languages.php:47
+#: includes/admin/settings/views/html-languages.php:138
+#: includes/admin/settings/views/html-languages.php:141
+msgid "Enable"
+msgstr "Activeren"
+
+#: includes/class-wpm-rest-settings.php:70
+msgid "Multilingual Settings"
+msgstr "Meertalige instellingen"
+
+#: includes/admin/class-wpm-admin-edit-menus.php:38
+#: includes/admin/class-wpm-admin-menus.php:160
+#: includes/admin/class-wpm-admin-menus.php:175
+#: includes/admin/class-wpm-admin-menus.php:178
+#: includes/admin/class-wpm-admin-meta-boxes.php:101
+#: includes/admin/class-wpm-admin-meta-boxes.php:106
+#: includes/admin/class-wpm-admin-posts.php:80
+#: includes/admin/class-wpm-admin-taxonomies.php:66
+#: includes/admin/settings/class-wpm-settings-languages.php:27
+#: includes/admin/settings/class-wpm-settings-languages.php:43
+#: includes/widgets/class-wpm-widget-language-switcher.php:31
+msgid "Languages"
+msgstr "Talen"
+
+#: includes/class-wpm-menus.php:116
+msgid "Custom Link"
+msgstr "Aangepaste link"
+
+#: includes/class-wpm-menus.php:93
+msgid "Post Type Archive"
+msgstr "Post Type Archief"
+
+#. translators: %d: ID of a post
+#: includes/class-wpm-menus.php:78 includes/class-wpm-menus.php:132
+#: includes/class-wpm-menus.php:154
+msgid "#%d (no title)"
+msgstr "#%d (geen titel)"
+
+#: includes/admin/settings/class-wpm-settings-languages.php:70
+msgid "Are you sure you want to delete this language?"
+msgstr "Weet je zeker dat je deze taal wilt verwijderen?"
