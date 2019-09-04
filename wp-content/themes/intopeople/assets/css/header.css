@@ -110,12 +110,16 @@
     display: flex;
     flex-flow: row nowrap;
 }
+.header .sub-menu li:before, .header .sub-menu li:after {
+    display: none;
+}
 .header .sub-menu a {
+    display: block;
     color: #ffcd44;
     text-decoration: none;
     margin-right: 40px;
     letter-spacing: 2px;
 }
-.header .sub-menu a:last-child {
+.header .sub-menu li:last-child a {
     margin-right: 0;
 }

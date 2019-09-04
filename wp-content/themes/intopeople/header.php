@@ -15,23 +15,17 @@
             <?php if (is_front_page()): ?>
                 <div class="top-text">
                     <div class="sub-menu">
-                        <a href="#">Schrijf je in</a>
-                        <a href="#">Voor onze e-nieuwsbrief</a>
+                        <a href="#"><?php _e('Sign up for our newsletter', 'intopeople') ?></a>
                     </div>
                 </div>
                 <div class="middle-text">
                     <h1>
-                        projectcoördinatie, consultancy<br>
-                        en begeleiding van nearshore activiteiten
+                        <?php _e('Project Coordination, Consulting<br>and management of oursourced activities', 'intopeople') ?>
                     </h1>
                 </div>
                 <div class="bottom-text">
-                    <p>Lees meer over onze ervaring in volgende richtingen:</p>
-                    <div class="sub-menu">
-                        <a href="#">Nearshore Development</a>
-                        <a href="#">Payrolling</a>
-                        <a href="#">Detachering</a>
-                    </div>
+                    <p><?php _e( 'Read more about our experience in the following areas' ) ?></p>
+	                <?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => false, 'menu_class' => 'sub-menu' ) ) ?>
                 </div>
             <?php endif ?>
         </div>

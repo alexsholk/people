@@ -20,6 +20,7 @@ if ( ! function_exists( 'intopeople_setup' ) ) :
 		 */
 		register_nav_menus( array(
 			'top'    => __( 'Top Menu', 'intopeople' ),
+			'header' => __( 'Header Menu', 'intopeople' ),
 			'social' => __( 'Social Links Menu', 'intopeople' ),
 		) );
 
