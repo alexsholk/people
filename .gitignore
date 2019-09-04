@@ -2,3 +2,4 @@
 /_dump/
 /wp-content/db.php
 /wp-content/debug.log
+/wp-config.php
