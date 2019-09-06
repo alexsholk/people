@@ -24,7 +24,7 @@
                     </h1>
                 </div>
                 <div class="bottom-text">
-                    <p><?php _e( 'Read more about our experience in the following areas' ) ?></p>
+                    <p><?php _e( 'Read more about our experience in the following areas', 'intopeople' ) ?></p>
 	                <?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => false, 'menu_class' => 'sub-menu' ) ) ?>
                 </div>
             <?php endif ?>
