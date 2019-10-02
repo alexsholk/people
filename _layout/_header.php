@@ -7,6 +7,7 @@ $header_minimal = $header_minimal ?? true;
 ?>
 <div class="header<?= $header_minimal ? ' header-minimal' : '' ?>">
     <div class="main-wrap">
+        <div class="menu-trigger"></div>
         <a class="logo" href="index.php"></a>
         <nav class="main-menu">
             <a href="about.php"<?= $selected == 1 ? ' class="active"' : '' ?>>Over Ons</a>
@@ -32,7 +33,7 @@ $header_minimal = $header_minimal ?? true;
             <div class="bottom-text">
                 <p>Lees meer over onze ervaring in volgende richtingen:</p>
                 <div class="sub-menu">
-                    <a href="#">Nearshore Development</a>
+                    <a href="#">Nearshore&nbsp;Development</a>
                     <a href="#">Payrolling</a>
                     <a href="#">Detachering</a>
                 </div>

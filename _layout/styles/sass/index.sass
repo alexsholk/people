@@ -108,6 +108,8 @@ body
       background-image: url("../../images/flag_ru.png")
     &.lang-en
       background-image: url("../../images/flag_en.png")
+  .menu-trigger
+    display: none
   .main-menu
     position: absolute
     top: 49px
@@ -156,11 +158,12 @@ body
   .sub-menu
     font: bold 13px/16px $default-font-family
     display: flex
-    flex-flow: row nowrap
+    flex-flow: row wrap
     a
       color: $accent-text-color
       text-decoration: none
       margin-right: 40px
+      margin-bottom: 16px
       letter-spacing: 2px
       &:last-child
         margin-right: 0
